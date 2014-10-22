@@ -1,4 +1,4 @@
-# Lang Wars - JavaChallenge 2014
+# Lang Wars 2 - AI Challenge @ CODE FESTIVAL 2014
 
 ## Overview of Game
 
@@ -90,12 +90,12 @@ The format of settings is listed as following:
 
 <pre>
 T P N
-A<sub>0</sub> A<sub>1</sub> A<sub>2</sub> ... A<sub>7</sub>
+A<sub>0</sub> A<sub>1</sub> A<sub>2</sub> ... A<sub>5</sub>
 </pre>
 
-* T: The number of all turns (always 10).
+* T: The number of all turns (always 9).
 * P: The number of players (always 4).
-* N: The number of programming language (always 8).
+* N: The number of programming language (always 6).
 * A<sub>i</sub>: The attention degree of language i.
 
 ### Input Format of Turn Information
@@ -109,9 +109,9 @@ B<sub>10</sub>　B<sub>11</sub> B<sub>12</sub> B<sub>13</sub>
 B<sub>20</sub>　B<sub>21</sub> B<sub>22</sub> B<sub>23</sub>
 :
 :
-B<sub>70</sub>　B<sub>71</sub> B<sub>72</sub> B<sub>73</sub>
-R<sub>0</sub> R<sub>1</sub> R<sub>2</sub> ... R<sub>7</sub>
-P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>7</sub>
+B<sub>50</sub>　B<sub>51</sub> B<sub>52</sub> B<sub>53</sub>
+R<sub>0</sub> R<sub>1</sub> R<sub>2</sub> ... R<sub>5</sub>
+P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>5</sub>
 </pre>
 
 * T: Current turn. (starts from 1)
@@ -120,7 +120,7 @@ P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>7</sub>
 * R<sub>i</sub>: Your real number of believers of programming language i (counting the believers gathered in both workday and holiday turns).
 * P<sub>i</sub>: The number of times the programming language i was propagated in the previous holiday turn.
 
-The last line (P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>7</sub>) is only revealed in workday turns.
+The last line (P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>5</sub>) is only revealed in workday turns.
 
 ### Output format of Actions
 
@@ -138,7 +138,7 @@ Print the language to propagate to the standard output with the following format
   L<sub>0</sub> L<sub>1</sub>
   </pre>
 
-L<sub>i</sub>: The number of programming language to propagate (from 0 to 7). The order of L<sub>0</sub> to L<sub>4</sub> is not concerned.
+L<sub>i</sub>: The number of programming language to propagate (from 0 to 5). The order of L<sub>0</sub> to L<sub>4</sub> is not concerned.
 
 Please terminate the output with the newline character ("\n"), and be sure to flush the standard output after printing.
 Once an AI program prints its action, its turn finishes.

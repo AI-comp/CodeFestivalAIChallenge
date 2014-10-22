@@ -1,4 +1,4 @@
-# Lang Wars 2 - CODE FESTIVAL AI CHALLENGE 2014
+# Lang Wars 2 - AI Challenge @ CODE FESTIVAL 2014
 
 公式サイト
 - http://www.ai-comp.net/codefestival2014/

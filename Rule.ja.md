@@ -1,4 +1,4 @@
-# Lang Wars 2 - CODE FESTIVAL AI CHALLENGE 2014
+# Lang Wars 2 - AI Challenge @ CODE FESTIVAL 2014
 
 ## ストーリー
 
@@ -95,7 +95,7 @@ AIの思考時間には制限がある。
 
 <pre>
 T P N
-A<sub>0</sub> A<sub>1</sub> A<sub>2</sub> ... A<sub>7</sub>
+A<sub>0</sub> A<sub>1</sub> A<sub>2</sub> ... A<sub>5</sub>
 </pre>
 
 * T: 全ターン数。
@@ -114,9 +114,9 @@ B<sub>10</sub>　B<sub>11</sub> B<sub>12</sub> B<sub>13</sub>
 B<sub>20</sub>　B<sub>21</sub> B<sub>22</sub> B<sub>23</sub>
 :
 :
-B<sub>70</sub>　B<sub>71</sub> B<sub>72</sub> B<sub>73</sub>
-R<sub>0</sub> R<sub>1</sub> R<sub>2</sub> ... R<sub>7</sub>
-P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>7</sub>
+B<sub>50</sub>　B<sub>51</sub> B<sub>52</sub> B<sub>53</sub>
+R<sub>0</sub> R<sub>1</sub> R<sub>2</sub> ... R<sub>5</sub>
+P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>5</sub>
 </pre>
 
 * T: 現在のターン数。1から始まる。
@@ -125,7 +125,7 @@ P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>7</sub>
 * R<sub>n</sub>: プログラミング言語nに対するこのAIプレイヤーの真の（つまり休日も合わせた）信者数。
 * P<sub>n</sub>: プログラミング言語nが前日の休日に布教をされた回数。
 
-P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>7</sub>の行は、平日のターンでのみ含まれる。
+P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>5</sub>の行は、平日のターンでのみ含まれる。
 
 ### 行動の出力形式
 
@@ -143,7 +143,7 @@ P<sub>0</sub> P<sub>1</sub> P<sub>2</sub> ... P<sub>7</sub>の行は、平日の
   L<sub>0</sub> L<sub>1</sub>
   </pre>
 
-L<sub>n</sub>: 布教するプログラミング言語の番号（0から7で指定）。L<sub>0</sub>からL<sub>4</sub>の順番は関係しない。
+L<sub>n</sub>: 布教するプログラミング言語の番号（0から5で指定）。L<sub>0</sub>からL<sub>4</sub>の順番は関係しない。
 
 一度行動を出力すると、そのAIのターンは終了となる。
 なお、ターン開始から1秒以内に出力がなければ、AIプログラムが強制的に停止される。
