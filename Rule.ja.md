@@ -65,7 +65,7 @@ CJCに代わり第二次宗教線でプログラミング言語界を制する�
 
 ## ゲームの終了
 
-10ターン目が終わると、ゲームが終了し、勝利点の計算に入る。
+9ターン目が終わると、ゲームが終了し、勝利点の計算に入る。
 
 各プログラミング言語で得られる勝利点は、そのプログラミング言語に対する信者数を他のプレイヤーと比べて決められる。
 そのプログラミング言語に対する信者数が全プレイヤー中で最も高い場合は、注目度と同じ点数の勝利点を得る。
@@ -156,14 +156,14 @@ L<sub>n</sub>: 布教するプログラミング言語の番号（0から7で指
 
     main:
         init
-        while turn <= 10:
+        while turn <= 9:
             process_turn
             turn += 1
         finish
 
     init:
         players = player[4]
-        languages = programming_language[8] (rand(3, 6), [0, 0, 0, 0], [0, 0, 0, 0])
+        languages = programming_language[6] (rand(3, 6), [0, 0, 0, 0], [0, 0, 0, 0])
         turn = 1
 
     process_turn:
