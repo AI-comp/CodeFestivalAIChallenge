@@ -1,4 +1,4 @@
-# Lang Wars 2 - AI Challenge @ CODE FESTIVAL 2014
+# Language Survival - AI Challenge @ CODE FESTIVAL 2014
 
 Web Sites
 
