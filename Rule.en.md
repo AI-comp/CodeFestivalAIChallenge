@@ -59,7 +59,7 @@ If it is the fifth turn of the game, everyone will be notified how many believer
 
 ## End of Game
 
-After 10 turns, the game ends and victory points are calculated.
+After 9 turns, the game ends and victory points are calculated.
 
 The player who gathered the most/least number of the believers of a programming language gains/loses the attention degree of the language as victory points.
 When multiple players gathered the most/least number of the believers, they gain/lose the attention degree divided by the number of the players. Floating-point divisions are used in calculating victory points.
@@ -152,14 +152,14 @@ Note that, if an AI program does not print its action within 1 second from the b
 
     main:
         init
-        while turn <= 10:
+        while turn <= 9:
             process_turn
             turn += 1
         finish
 
     init:
         players = player[4]
-        languages = programming_language[8] (rand(3, 6), [0, 0, 0, 0], [0, 0, 0, 0])
+        languages = programming_language[6] (rand(3, 6), [0, 0, 0, 0], [0, 0, 0, 0])
         turn = 1
 
     process_turn:
