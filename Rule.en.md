@@ -174,7 +174,7 @@ Note that, if an AI program does not print its action within 1 second from the b
             for i in [1 .. (is_holiday ? 2 : 5)]:
                 target = languages[p.selected[i]]
                 target.revealed_believers[p] += (is_holiday ? 0 : 1)
-                target.real_believers[p] += 1
+                target.real_believers[p] += (is_holiday ? 2 : 1)
                 target.propagated += 1
 
         if turn == 5:
